@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<CodeSnippets xmlns="http://schemas.microsoft.com/VisualStudio/2005/CodeSnippet">
+  <CodeSnippet Format="1.0.0">
+    <Header>
+      <Title>Private Method With Param</Title>
+      <Shortcut>pvm</Shortcut>
+      <Author>VDS</Author>
+      <SnippetTypes>
+        <SnippetType>Expansion</SnippetType>
+      </SnippetTypes>
+    </Header>
+
+    <Snippet>
+      <Declarations>
+        <Literal>
+          <ID>type</ID>
+          <Default>void</Default>
+        </Literal>
+        <Literal>
+          <ID>method</ID>
+          <Default>Method</Default>
+        </Literal>
+        <Literal>
+          <ID>paramType</ID>
+          <Default>int</Default>
+        </Literal>
+        <Literal>
+          <ID>param</ID>
+          <Default>value</Default>
+        </Literal>
+      </Declarations>
+
+      <Code Language="csharp"><![CDATA[
+private $type$ $method$($paramType$ $param$)
+{
+    $end$
+}
+]]>
+      </Code>
+    </Snippet>
+  </CodeSnippet>
+</CodeSnippets>

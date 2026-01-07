@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<CodeSnippets xmlns="http://schemas.microsoft.com/VisualStudio/2005/CodeSnippet">
+  <CodeSnippet Format="1.0.0">
+    <Header>
+      <Title>Delegate Action</Title>
+      <Shortcut>dg</Shortcut>
+      <Description>public static Action&lt;&gt; delegate</Description>
+      <Author>VDS</Author>
+      <SnippetTypes>
+        <SnippetType>Expansion</SnippetType>
+      </SnippetTypes>
+    </Header>
+
+    <Snippet>
+      <Declarations>
+        <!-- delegate type (trống generic) -->
+        <Literal>
+          <ID>delegateType</ID>
+          <ToolTip>Delegate type</ToolTip>
+          <Default>Action&lt;&gt;</Default>
+        </Literal>
+
+        <!-- delegate name -->
+        <Literal>
+          <ID>name</ID>
+          <ToolTip>Delegate name</ToolTip>
+          <Default>onEvent</Default>
+        </Literal>
+      </Declarations>
+
+      <Code Language="csharp"><![CDATA[
+public static $delegateType$ $name$;
+$end$
+]]>
+      </Code>
+    </Snippet>
+  </CodeSnippet>
+</CodeSnippets>

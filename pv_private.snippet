@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<CodeSnippets xmlns="http://schemas.microsoft.com/VisualStudio/2005/CodeSnippet">
+  <CodeSnippet Format="1.0.0">
+    <Header>
+      <Title>Private Method (Editable Return Type)</Title>
+      <Shortcut>pv</Shortcut>
+      <Description>private [type] Method()</Description>
+      <Author>VDS</Author>
+      <SnippetTypes>
+        <SnippetType>Expansion</SnippetType>
+      </SnippetTypes>
+    </Header>
+
+    <Snippet>
+      <Declarations>
+        <!-- Kiểu trả về -->
+        <Literal>
+          <ID>type</ID>
+          <ToolTip>Return type</ToolTip>
+          <Default>void</Default>
+        </Literal>
+
+        <!-- Tên hàm -->
+        <Literal>
+          <ID>method</ID>
+          <ToolTip>Method name</ToolTip>
+          <Default>Method</Default>
+        </Literal>
+      </Declarations>
+
+      <Code Language="csharp"><![CDATA[
+private $type$ $method$()
+{
+    $end$
+}
+]]>
+      </Code>
+    </Snippet>
+  </CodeSnippet>
+</CodeSnippets>
